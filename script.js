@@ -122,6 +122,7 @@ const submit = ()=>{
 
 }
 const gameOver = ()=>{
+    document.getElementsByClassName("lose")[0].innerHTML += word ;
     document.getElementsByClassName("lose")[0].style.display = "flex" ;
 }
 const Win = () =>{

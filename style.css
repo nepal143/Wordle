@@ -110,6 +110,7 @@ form{
     background-color: rgba(128, 0, 0, 0.628);
     color: rgb(255, 0, 0);
     animation: zoom 0.5s linear;
+    text-align: center;
 }
 @media screen and (max-width :800px) {
     .word{
