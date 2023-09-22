@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.912);
+    color: white;
+    font-size: 2em;
+    font-family: monospace;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    border-radius: 20px;
+    height: 400px;
+    background-color: rgb(63, 63, 63);
+}
+
+.row{
+    width: 90%;
+    height: 32%;
+    margin: 2% auto ;
+    /* background-color: white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:auto 5px ;
+
+
+}
+#box{
+     height: 90%;
+     width: 16%;
+     margin: auto ;
+     background-color: black;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 1.4em;
+     border-radius: 10px;
+
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.word{
+    width: 20vw;
+    height: 2vw;
+    margin: 10px;
+    background-color: rgb(255, 247, 9);
+    color: grey;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#btn1{
+    padding: 5px;
+    width: 100px;
+    border-radius: 50px;
+    background-color: greenyellow;
+    /* color: white; */
+}
+.error{
+    width: 80%;
+    color: red;
+    font-family: monospace;
+    /* font-size: 2em; */
+    text-align: center;
+    display: none;
+}
+.win{
+    position: absolute;
+    /* display: flex; */
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 6vw;
+    background-color: rgba(0, 128, 0, 0.628);
+    color: rgb(0, 255, 0);
+    animation: zoom 0.5s linear;
+}
+@keyframes zoom {
+    0%{
+        scale: 0;
+    }
+    100%{
+        scale: 1;
+    }
+    
+}
+.lose{
+    position: absolute;
+    /* display: flex; */
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 6vw;
+    background-color: rgba(128, 0, 0, 0.628);
+    color: rgb(255, 0, 0);
+    animation: zoom 0.5s linear;
+}
+@media screen and (max-width :800px) {
+    .word{
+        width: 80vw;
+        height: 5vw;
+        /* background-color: grey; */
+        /* color: rgb(0, 255, 200); */
+    }
+}
+p{
+    text-align: center;
+}
