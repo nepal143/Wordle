@@ -10,20 +10,20 @@ const fiveLetterWords = [
     "globe", "hazel", "index", "juicy", "knife",
     "lunar", "melon", "nymph", "oasis", "peach",
     "quest", "rider", "snake", "trout", "under",
-    "viper", "waltz", "xerox", "young", "zealot",
+    "viper", "waltz", "xerox", "young", 
     "blink", "cloud", "dwarf", "flour", "grain",
     "hatch", "ivory", "jewel", "knock", "latch",
     "maple", "needy", "opera", "peony", "quail",
     "rapid", "sheep", "tramp", "urban", "vegan",
-    "whale", "xylophone", "yellow", "zeppelin",
+    "whale",
     "brisk", "crane", "demon", "elbow", "fable",
-    "giant", "hoist", "insect", "joker", "knack",
+    "giant", "hoist", "joker", "knack",
     "lemon", "mirth", "novel", "onion", "peach",
-    "quiet", "sable", "trick", "umbra", "velvet",
+    "quiet", "sable", "trick", "umbra",
     "wagon", "zesty" , "nepal" , "punit"
   ];
 
-word = fiveLetterWords[Math.floor(Math.random()*99)];
+word = fiveLetterWords[Math.floor(Math.random()*(fiveLetterWords.length-1))];
 let number = Math.floor([Math.random()*99]);
 // let word = fiveLetterWords[number] ; 
 // let word = "apple";
